@@ -1,0 +1,25 @@
+def divide_by_user_input():
+    try:
+        user_input = input("Please enter a number to divide 10 by: ")
+        
+        number = float(user_input)
+        
+        result = 10 / number
+        
+        print(f"Result of division: 10 / {number} = {result}")
+    
+    except ZeroDivisionError:
+        
+        print("Error: Division by zero is not allowed.")
+    
+    except ValueError:
+        
+        print("Error: Invalid input. Please enter a numeric value.")
+    
+    finally:
+        print("Cleanup operations completed. Exiting program.")
+
+
+divide_by_user_input()
+
+
